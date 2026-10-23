@@ -22,29 +22,29 @@ sources = [
 ]
 +++
 
-Voice Studio wird als kostenlose Open-Source-Alternative zum Sprach-KI-Dienst ElevenLabs präsentiert. Es soll vollständig auf dem eigenen Computer laufen. Die bisher einzige Quelle ist ein TikTok-Video im Format „Fact or Hype?“, das die Einrichtung zeigt, aber die Klangqualität nicht bewertet. [Q:2026-10-23-voice-studio-open-source-alternative-zu-elevenlabs]
+Voice Studio wird als kostenlose Open-Source-Alternative zum Sprach-KI-Dienst ElevenLabs präsentiert. Es soll vollständig auf dem eigenen Computer laufen. Die bisher einzige Quelle ist ein TikTok-Video im Format „Fact or Hype?“, das die Einrichtung zeigt, aber die Klangqualität nicht bewertet.<sup class="q"><a href="#2026-10-23-voice-studio-open-source-alternative-zu-elevenlabs">1</a></sup>
 
 ## Positionierung
 
-- Voice Studio wird als kostenlose Open-Source-Alternative zu ElevenLabs dargestellt. [Q:2026-10-23-voice-studio-open-source-alternative-zu-elevenlabs]
-- Das Werkzeug soll komplett lokal laufen, es braucht also keinen Cloud-Dienst. [Q:2026-10-23-voice-studio-open-source-alternative-zu-elevenlabs]
+- Voice Studio wird als kostenlose Open-Source-Alternative zu ElevenLabs dargestellt.<sup class="q"><a href="#2026-10-23-voice-studio-open-source-alternative-zu-elevenlabs">1</a></sup>
+- Das Werkzeug soll komplett lokal laufen, es braucht also keinen Cloud-Dienst.<sup class="q"><a href="#2026-10-23-voice-studio-open-source-alternative-zu-elevenlabs">1</a></sup>
 
 ## Funktionen
 
-Laut Video bietet das Programm Stimmklonen, Voice-Design, Dubbing und Transkription. [Q:2026-10-23-voice-studio-open-source-alternative-zu-elevenlabs]
+Laut Video bietet das Programm Stimmklonen, Voice-Design, Dubbing und Transkription.<sup class="q"><a href="#2026-10-23-voice-studio-open-source-alternative-zu-elevenlabs">1</a></sup>
 
 ## Installation
 
-- Die Installation erfolgt laut Video über einen Installationsprompt in Claude Code. [Q:2026-10-23-voice-studio-open-source-alternative-zu-elevenlabs]
-- Eine Hardware-Prüfung ergab laut Sprecher, dass sein Rechner ausreicht. [Q:2026-10-23-voice-studio-open-source-alternative-zu-elevenlabs]
-- Der Sprecher wählt die höchste Ausgabequalität. [Q:2026-10-23-voice-studio-open-source-alternative-zu-elevenlabs]
+- Die Installation erfolgt laut Video über einen Installationsprompt in Claude Code.<sup class="q"><a href="#2026-10-23-voice-studio-open-source-alternative-zu-elevenlabs">1</a></sup>
+- Eine Hardware-Prüfung ergab laut Sprecher, dass sein Rechner ausreicht.<sup class="q"><a href="#2026-10-23-voice-studio-open-source-alternative-zu-elevenlabs">1</a></sup>
+- Der Sprecher wählt die höchste Ausgabequalität.<sup class="q"><a href="#2026-10-23-voice-studio-open-source-alternative-zu-elevenlabs">1</a></sup>
 
 ## Stimmklonen im Test
 
-Für den Klon lud der Sprecher einen 15-Sekunden-Audioclip seiner eigenen Stimme hoch und ließ einen Testsatz generieren. [Q:2026-10-23-voice-studio-open-source-alternative-zu-elevenlabs]
+Für den Klon lud der Sprecher einen 15-Sekunden-Audioclip seiner eigenen Stimme hoch und ließ einen Testsatz generieren.<sup class="q"><a href="#2026-10-23-voice-studio-open-source-alternative-zu-elevenlabs">1</a></sup>
 
 ## Offene Punkte und Einordnung
 
-- Ob das Ergebnis gut klingt, wird im Video nicht abschließend bewertet. [Q:2026-10-23-voice-studio-open-source-alternative-zu-elevenlabs]
-- Der Schlusssatz „100 % Fakt“ ist eine Pointe und beruht auf keiner belegten Prüfung. [Q:2026-10-23-voice-studio-open-source-alternative-zu-elevenlabs]
+- Ob das Ergebnis gut klingt, wird im Video nicht abschließend bewertet.<sup class="q"><a href="#2026-10-23-voice-studio-open-source-alternative-zu-elevenlabs">1</a></sup>
+- Der Schlusssatz „100 % Fakt“ ist eine Pointe und beruht auf keiner belegten Prüfung.<sup class="q"><a href="#2026-10-23-voice-studio-open-source-alternative-zu-elevenlabs">1</a></sup>
 - Ungeklärt bleibt damit, wie gut Klonqualität, Funktionsumfang und Aufwand im Vergleich zu ElevenLabs tatsächlich sind.

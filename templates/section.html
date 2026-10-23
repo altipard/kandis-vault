@@ -1,8 +1,11 @@
 {% extends "base.html" %}
 {% block title %}{{ section.title }} · {{ config.title }}{% endblock title %}
+{% block cmd %} --{{ section.title | lower }}{% endblock cmd %}
 {% block content %}
-<h1>{{ section.title }} <span class="count">{{ section.pages | length }}</span></h1>
-<ul class="list {% if section.title == "Quellen" %}compact{% endif %}">
-{% for page in section.pages %}{{ <list_item page /> }}{% endfor %}
-</ul>
+<h1>{{ section.title }} <span class="count">({{ section.pages | length }})</span></h1>
+{% if section.title == "Quellen" %}
+<ul class="log">{% for page in section.pages %}{{ <source_line page /> }}{% endfor %}</ul>
+{% else %}
+<ul class="cards">{% for page in section.pages %}{{ <topic_card page /> }}{% endfor %}</ul>
+{% endif %}
 {% endblock content %}

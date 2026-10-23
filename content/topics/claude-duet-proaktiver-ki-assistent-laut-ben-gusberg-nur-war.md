@@ -22,27 +22,27 @@ sources = [
 ]
 +++
 
-Duet ist ein persönlicher KI-Assistent für Claude, den der Gründer Ben Gusberg in einem TikTok-Video vorstellt. Er soll selbstständig erkennen, wo er helfen kann. Verfügbar ist er laut Video bisher nur über eine Warteliste. [Q:2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe]
+Duet ist ein persönlicher KI-Assistent für Claude, den der Gründer Ben Gusberg in einem TikTok-Video vorstellt. Er soll selbstständig erkennen, wo er helfen kann. Verfügbar ist er laut Video bisher nur über eine Warteliste.<sup class="q"><a href="#2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe">1</a></sup>
 
 ## Funktionsweise und Fähigkeiten
 
-- Duet soll laut Sprecher der erste persönliche Assistent von Claude sein, der proaktiv nach Möglichkeiten sucht, dem Nutzer zu helfen. [Q:2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe]
-- Er läuft laut Video auf einem eigenen Computer in der Cloud. [Q:2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe]
-- Genannte Beispiele: verpasste E-Mails und doppelt belegte Termine melden. [Q:2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe]
-- Laut Sprecher kann Duet außerdem Folien erstellen, auf Nachrichten antworten und Aufgaben übernehmen. [Q:2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe]
+- Duet soll laut Sprecher der erste persönliche Assistent von Claude sein, der proaktiv nach Möglichkeiten sucht, dem Nutzer zu helfen.<sup class="q"><a href="#2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe">1</a></sup>
+- Er läuft laut Video auf einem eigenen Computer in der Cloud.<sup class="q"><a href="#2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe">1</a></sup>
+- Genannte Beispiele: verpasste E-Mails und doppelt belegte Termine melden.<sup class="q"><a href="#2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe">1</a></sup>
+- Laut Sprecher kann Duet außerdem Folien erstellen, auf Nachrichten antworten und Aufgaben übernehmen.<sup class="q"><a href="#2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe">1</a></sup>
 
 ## Behaupteter Vorteil gegenüber anderen Assistenten
 
-Gusberg behauptet, Duet sei für bestehende Claude-Nutzer anderen KI-Assistenten überlegen. Seine Begründungen: [Q:2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe]
+Gusberg behauptet, Duet sei für bestehende Claude-Nutzer anderen KI-Assistenten überlegen. Seine Begründungen:<sup class="q"><a href="#2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe">1</a></sup>
 
-- **Keine Einrichtung:** Bestehende Apps, Skills und Plugins werden übernommen. [Q:2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe]
-- **Kein zusätzliches Abo:** Duet nutzt das bestehende Claude-Abo. [Q:2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe]
-- **Kontext und Gedächtnis:** Beides soll aus dem vorhandenen Claude-Setup des Nutzers übernommen werden. [Q:2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe]
+- **Keine Einrichtung:** Bestehende Apps, Skills und Plugins werden übernommen.<sup class="q"><a href="#2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe">1</a></sup>
+- **Kein zusätzliches Abo:** Duet nutzt das bestehende Claude-Abo.<sup class="q"><a href="#2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe">1</a></sup>
+- **Kontext und Gedächtnis:** Beides soll aus dem vorhandenen Claude-Setup des Nutzers übernommen werden.<sup class="q"><a href="#2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe">1</a></sup>
 
 ## Verfügbarkeit
 
-Duet ist laut Video derzeit nur über eine Warteliste erhältlich. [Q:2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe]
+Duet ist laut Video derzeit nur über eine Warteliste erhältlich.<sup class="q"><a href="#2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe">1</a></sup>
 
 ## Einordnung der Quelle
 
-Die Informationen stammen ausschließlich aus einem Werbevideo des Gründers. Belege für die Aussagen, etwa zu Funktionsumfang oder Überlegenheit gegenüber anderen Assistenten, nennt das Video nicht. Am Ende wird zudem Gusbergs eigenes Kursangebot „AI Jumpstart“ beworben; die Aussagen sind daher mit Vorsicht zu behandeln. [Q:2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe]
+Die Informationen stammen ausschließlich aus einem Werbevideo des Gründers. Belege für die Aussagen, etwa zu Funktionsumfang oder Überlegenheit gegenüber anderen Assistenten, nennt das Video nicht. Am Ende wird zudem Gusbergs eigenes Kursangebot „AI Jumpstart“ beworben; die Aussagen sind daher mit Vorsicht zu behandeln.<sup class="q"><a href="#2026-10-23-claude-duet-proaktiver-ki-assistent-laut-ben-gusbe">1</a></sup>

@@ -22,24 +22,24 @@ sources = [
 ]
 +++
 
-Das Rust-Team hat Version 1.83.0 angekündigt. Im Mittelpunkt stehen Erweiterungen für Code in const-Kontexten, den der Compiler zur Compilezeit auswertet. Dazu kommen mehrere APIs, die nun in const-Kontexten stabil sind. [Q:2026-10-23-rust-1-83-0-erweiterte-const-kontexte-und-neue-sta]
+Das Rust-Team hat Version 1.83.0 angekündigt. Im Mittelpunkt stehen Erweiterungen für Code in const-Kontexten, den der Compiler zur Compilezeit auswertet. Dazu kommen mehrere APIs, die nun in const-Kontexten stabil sind.<sup class="q"><a href="#2026-10-23-rust-1-83-0-erweiterte-const-kontexte-und-neue-sta">1</a></sup>
 
 ## Verweise auf statische Variablen
 
-- Konstanten (`const`) dürfen jetzt auf statische Variablen (`static`) verweisen. [Q:2026-10-23-rust-1-83-0-erweiterte-const-kontexte-und-neue-sta]
-- Das Lesen mutabler oder interior-mutabler statics bleibt in const-Kontexten verboten. [Q:2026-10-23-rust-1-83-0-erweiterte-const-kontexte-und-neue-sta]
-- Der Endwert einer Konstante darf keine Referenz auf mutable oder interior-mutable statics enthalten. [Q:2026-10-23-rust-1-83-0-erweiterte-const-kontexte-und-neue-sta]
-- Eine Konstante darf dagegen als Wert einen Raw-Pointer auf eine mutable static liefern. [Q:2026-10-23-rust-1-83-0-erweiterte-const-kontexte-und-neue-sta]
+- Konstanten (`const`) dürfen jetzt auf statische Variablen (`static`) verweisen.<sup class="q"><a href="#2026-10-23-rust-1-83-0-erweiterte-const-kontexte-und-neue-sta">1</a></sup>
+- Das Lesen mutabler oder interior-mutabler statics bleibt in const-Kontexten verboten.<sup class="q"><a href="#2026-10-23-rust-1-83-0-erweiterte-const-kontexte-und-neue-sta">1</a></sup>
+- Der Endwert einer Konstante darf keine Referenz auf mutable oder interior-mutable statics enthalten.<sup class="q"><a href="#2026-10-23-rust-1-83-0-erweiterte-const-kontexte-und-neue-sta">1</a></sup>
+- Eine Konstante darf dagegen als Wert einen Raw-Pointer auf eine mutable static liefern.<sup class="q"><a href="#2026-10-23-rust-1-83-0-erweiterte-const-kontexte-und-neue-sta">1</a></sup>
 
 ## Mutabilität innerhalb von const-Berechnungen
 
-- Mutable Referenzen sind in const-Kontexten erlaubt, solange sie nicht Teil des finalen Werts der Konstante werden. [Q:2026-10-23-rust-1-83-0-erweiterte-const-kontexte-und-neue-sta]
-- Mutable Raw-Pointer und `UnsafeCell` (Interior Mutability) werden in const-Berechnungen unterstützt. [Q:2026-10-23-rust-1-83-0-erweiterte-const-kontexte-und-neue-sta]
+- Mutable Referenzen sind in const-Kontexten erlaubt, solange sie nicht Teil des finalen Werts der Konstante werden.<sup class="q"><a href="#2026-10-23-rust-1-83-0-erweiterte-const-kontexte-und-neue-sta">1</a></sup>
+- Mutable Raw-Pointer und `UnsafeCell` (Interior Mutability) werden in const-Berechnungen unterstützt.<sup class="q"><a href="#2026-10-23-rust-1-83-0-erweiterte-const-kontexte-und-neue-sta">1</a></sup>
 
 ## Neue in const-Kontexten stabile APIs
 
-Mehrere zusätzliche Funktionen sind nun in const-Kontexten stabil. Die konkrete Liste fehlt in der vorliegenden Quelle und muss in den vollständigen Release Notes nachgelesen werden. [Q:2026-10-23-rust-1-83-0-erweiterte-const-kontexte-und-neue-sta]
+Mehrere zusätzliche Funktionen sind nun in const-Kontexten stabil. Die konkrete Liste fehlt in der vorliegenden Quelle und muss in den vollständigen Release Notes nachgelesen werden.<sup class="q"><a href="#2026-10-23-rust-1-83-0-erweiterte-const-kontexte-und-neue-sta">1</a></sup>
 
 ## Update und weitere Hinweise
 
-Die Installation erfolgt über `rustup update stable`. Hinweise zu Cargo und Clippy verweisen auf die vollständigen Release Notes. Details dazu stehen in der Quelle nicht. [Q:2026-10-23-rust-1-83-0-erweiterte-const-kontexte-und-neue-sta]
+Die Installation erfolgt über `rustup update stable`. Hinweise zu Cargo und Clippy verweisen auf die vollständigen Release Notes. Details dazu stehen in der Quelle nicht.<sup class="q"><a href="#2026-10-23-rust-1-83-0-erweiterte-const-kontexte-und-neue-sta">1</a></sup>

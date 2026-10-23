@@ -2,22 +2,20 @@
 {% block content %}
 {% set topics = get_section(path="topics/_index.md") %}
 {% set sources = get_section(path="sources/_index.md") %}
-<section>
-  <h1>Zuletzt erweitert</h1>
-  {% if topics.pages %}
-  <ul class="list">
-    {% for page in topics.pages[:15] %}{{ <topic_item page /> }}{% endfor %}
-  </ul>
-  <p><a href="{{ topics.permalink }}">Alle {{ topics.pages | length }} Themen</a></p>
-  {% else %}
-  <p class="empty">Noch keine Themen. Schick dem Bot einen Link.</p>
-  {% endif %}
-</section>
-<section>
-  <h2>Zuletzt eingegangen</h2>
-  <ul class="list compact">
-    {% for page in sources.pages[:15] %}{{ <source_item page /> }}{% endfor %}
-  </ul>
-  {% if sources.pages %}<p><a href="{{ sources.permalink }}">Alle {{ sources.pages | length }} Quellen</a></p>{% endif %}
-</section>
+<h2 class="abschnitt">Zuletzt erweitert</h2>
+{% if topics.pages %}
+<ul class="cards">
+  {% for page in topics.pages[:12] %}{{ <topic_card page /> }}{% endfor %}
+</ul>
+<p class="meta" style="margin-top:.8rem"><a href="{{ topics.permalink }}">alle {{ topics.pages | length }} themen →</a></p>
+{% else %}
+<p class="empty">Noch keine Themen. Schick dem Bot einen Link.</p>
+{% endif %}
+{% if sources.pages %}
+<h2 class="abschnitt">Zuletzt eingegangen</h2>
+<ul class="log">
+  {% for page in sources.pages[:12] %}{{ <source_line page /> }}{% endfor %}
+</ul>
+<p class="meta" style="margin-top:.8rem"><a href="{{ sources.permalink }}">alle {{ sources.pages | length }} quellen →</a></p>
+{% endif %}
 {% endblock content %}

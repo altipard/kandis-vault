@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% block title %}Suche · {{ config.title }}{% endblock title %}
+{% block cmd %} --suche{% endblock cmd %}
 {% block content %}
 <h1>Suche</h1>
 <input id="q" type="search" placeholder="Suchbegriff …" autofocus autocomplete="off">
-<ul id="results" class="list compact"></ul>
+<ul id="results" class="log"></ul>
 <script src="{{ get_url(path="elasticlunr.min.js") }}"></script>
 <script src="{{ get_url(path="search_index.de.js") }}"></script>
 <script>
@@ -15,12 +16,13 @@
     list.innerHTML = "";
     hits.slice(0, 30).forEach(function (hit) {
       var doc = hit.doc, li = document.createElement("li");
-      li.className = "item";
+      var when = document.createElement("span"); when.className = "when"; when.textContent = "match";
+      var box = document.createElement("span");
       var a = document.createElement("a");
-      a.className = "item-title"; a.href = hit.ref; a.textContent = doc.title;
-      var p = document.createElement("p");
-      p.textContent = (doc.body || "").slice(0, 200) + "…";
-      li.appendChild(a); li.appendChild(p); list.appendChild(li);
+      a.className = "title"; a.href = hit.ref; a.textContent = doc.title;
+      var p = document.createElement("span"); p.className = "meta";
+      p.textContent = (doc.body || "").slice(0, 160) + "…";
+      box.appendChild(a); box.appendChild(p); li.appendChild(when); li.appendChild(box); list.appendChild(li);
     });
   }
   input.addEventListener("input", function () {

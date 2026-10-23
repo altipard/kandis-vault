@@ -1,8 +1,12 @@
 {% extends "base.html" %}
-{% block title %}{{ term.name }} · {{ config.title }}{% endblock title %}
+{% block title %}#{{ term.name }} · {{ config.title }}{% endblock title %}
+{% block cmd %} --tag "{{ term.name }}"{% endblock cmd %}
 {% block content %}
-<h1>Schlagwort: {{ term.name }}</h1>
-<ul class="list">
-{% for page in term.pages %}{{ <list_item page /> }}{% endfor %}
+<h1>#{{ term.name }} <span class="count">({{ term.pages | length }})</span></h1>
+<ul class="cards">
+{% for page in term.pages %}{% if not page.extra.url %}{{ <topic_card page /> }}{% endif %}{% endfor %}
+</ul>
+<ul class="log" style="margin-top:1.2rem">
+{% for page in term.pages %}{% if page.extra.url %}{{ <source_line page /> }}{% endif %}{% endfor %}
 </ul>
 {% endblock content %}
