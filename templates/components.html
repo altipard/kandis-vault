@@ -1,0 +1,37 @@
+{% component topic_item(page) -%}
+<li class="item">
+  <a class="item-title" href="{{ page.permalink }}">{{ page.title }}</a>
+  <span class="meta">
+    {{ (page.updated or page.date) | date(format="%d.%m.%Y") }}
+    · {{ (page.extra.sources or []) | length }} Quellen
+  </span>
+  {% if page.extra.summary %}<p>{{ page.extra.summary }}</p>{% endif %}
+</li>
+{%- endcomponent %}
+
+{% component source_item(page) -%}
+<li class="item">
+  <a class="item-title" href="{{ page.permalink }}">{{ page.title }}</a>
+  <span class="meta">
+    {{ page.date | date(format="%d.%m.%Y") }}
+    · <span class="kind">{{ page.extra.kind }}</span>
+    · {{ page.extra.site }}
+    {% if page.extra.topic -%}
+      {% set topic = get_page(path="topics/" ~ page.extra.topic ~ ".md") %}
+      · <a href="{{ topic.permalink }}">{{ topic.title }}</a>
+    {%- endif %}
+  </span>
+</li>
+{%- endcomponent %}
+
+{% component list_item(page) -%}
+{% if page.extra.url %}{{ <source_item page /> }}{% else %}{{ <topic_item page /> }}{% endif %}
+{%- endcomponent %}
+
+{% component tag_list(tags) -%}
+{% if tags %}
+<p class="tags">
+  {% for tag in tags %}<a href="{{ get_taxonomy_url(kind="tags", term=tag) }}">{{ tag }}</a>{% endfor %}
+</p>
+{% endif %}
+{%- endcomponent %}

@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}{{ section.title }} · {{ config.title }}{% endblock title %}
+{% block content %}
+<h1>{{ section.title }} <span class="count">{{ section.pages | length }}</span></h1>
+<ul class="list {% if section.title == "Quellen" %}compact{% endif %}">
+{% for page in section.pages %}{{ <list_item page /> }}{% endfor %}
+</ul>
+{% endblock content %}

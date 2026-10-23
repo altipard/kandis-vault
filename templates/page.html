@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }} · {{ config.title }}{% endblock title %}
+{% block description %}{{ page.extra.summary or config.description }}{% endblock description %}
+{% block content %}
+<article>
+  <h1>{{ page.title }}</h1>
+  {% if page.extra.url %}
+    <p class="meta">
+      {{ page.date | date(format="%d.%m.%Y %H:%M") }}
+      · <span class="kind">{{ page.extra.kind }}</span>
+      · <a href="{{ page.extra.url }}" rel="noopener">{{ page.extra.site }}</a>
+      {% if page.extra.topic %}
+        {% set topic = get_page(path="topics/" ~ page.extra.topic ~ ".md") %}
+        · Thema: <a href="{{ topic.permalink }}">{{ topic.title }}</a>
+      {% endif %}
+    </p>
+    {{ <tag_list tags={page.taxonomies.tags or []} /> }}
+    <div class="body">{{ page.content | safe }}</div>
+  {% else %}
+    <p class="meta">
+      Angelegt {{ page.date | date(format="%d.%m.%Y") }}
+      {% if page.updated %}· zuletzt erweitert {{ page.updated | date(format="%d.%m.%Y") }}{% endif %}
+    </p>
+    {{ <tag_list tags={page.taxonomies.tags or []} /> }}
+    <div class="body">{{ page.content | safe }}</div>
+    {% set sources = page.extra.sources or [] %}
+    {% if sources %}
+    <section class="sources">
+      <h2>Quellen</h2>
+      <ol>
+      {% for slug in sources %}
+        {% set src = get_page(path="sources/" ~ slug ~ ".md") %}
+        <li id="{{ slug }}">
+          <a href="{{ src.permalink }}">{{ src.title }}</a>
+          <span class="meta">{{ src.date | date(format="%d.%m.%Y") }} · <a href="{{ src.extra.url }}" rel="noopener">{{ src.extra.site }}</a></span>
+          {% if src.extra.summary %}<p>{{ src.extra.summary }}</p>{% endif %}
+        </li>
+      {% endfor %}
+      </ol>
+    </section>
+    {% endif %}
+  {% endif %}
+</article>
+{% endblock content %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+{% set topics = get_section(path="topics/_index.md") %}
+{% set sources = get_section(path="sources/_index.md") %}
+<section>
+  <h1>Zuletzt erweitert</h1>
+  {% if topics.pages %}
+  <ul class="list">
+    {% for page in topics.pages[:15] %}{{ <topic_item page /> }}{% endfor %}
+  </ul>
+  <p><a href="{{ topics.permalink }}">Alle {{ topics.pages | length }} Themen</a></p>
+  {% else %}
+  <p class="empty">Noch keine Themen. Schick dem Bot einen Link.</p>
+  {% endif %}
+</section>
+<section>
+  <h2>Zuletzt eingegangen</h2>
+  <ul class="list compact">
+    {% for page in sources.pages[:15] %}{{ <source_item page /> }}{% endfor %}
+  </ul>
+  {% if sources.pages %}<p><a href="{{ sources.permalink }}">Alle {{ sources.pages | length }} Quellen</a></p>{% endif %}
+</section>
+{% endblock content %}

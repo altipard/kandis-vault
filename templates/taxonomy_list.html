@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Schlagwörter · {{ config.title }}{% endblock title %}
+{% block content %}
+<h1>Schlagwörter</h1>
+<p class="tagcloud">
+{% for term in terms | sort(attribute="name") %}
+  <a href="{{ term.permalink }}">{{ term.name }} <span class="count">{{ term.pages | length }}</span></a>
+{% endfor %}
+</p>
+{% endblock content %}

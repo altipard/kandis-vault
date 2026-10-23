@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Suche · {{ config.title }}{% endblock title %}
+{% block content %}
+<h1>Suche</h1>
+<input id="q" type="search" placeholder="Suchbegriff …" autofocus autocomplete="off">
+<ul id="results" class="list compact"></ul>
+<script src="{{ get_url(path="elasticlunr.min.js") }}"></script>
+<script src="{{ get_url(path="search_index.de.js") }}"></script>
+<script>
+(function () {
+  var input = document.getElementById("q");
+  var list = document.getElementById("results");
+  var index = elasticlunr.Index.load(window.searchIndex);
+  function render(hits) {
+    list.innerHTML = "";
+    hits.slice(0, 30).forEach(function (hit) {
+      var doc = hit.doc, li = document.createElement("li");
+      li.className = "item";
+      var a = document.createElement("a");
+      a.className = "item-title"; a.href = hit.ref; a.textContent = doc.title;
+      var p = document.createElement("p");
+      p.textContent = (doc.body || "").slice(0, 200) + "…";
+      li.appendChild(a); li.appendChild(p); list.appendChild(li);
+    });
+  }
+  input.addEventListener("input", function () {
+    var q = input.value.trim();
+    if (q.length < 2) { list.innerHTML = ""; return; }
+    render(index.search(q, { bool: "AND", expand: true }));
+  });
+  var initial = new URLSearchParams(location.search).get("q");
+  if (initial) { input.value = initial; input.dispatchEvent(new Event("input")); }
+})();
+</script>
+{% endblock content %}

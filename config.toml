@@ -1,0 +1,17 @@
+base_url = "https://altipard.github.io/kandis-vault"
+title = "Kandis"
+description = "Gelesenes und Gesehenes, verdichtet zu Themenseiten"
+default_language = "de"
+compile_sass = false
+build_search_index = true
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+taxonomies = [{ name = "tags" }]
+# LLM-Text enthält gelegentlich {{ oder {%, das darf Zola nicht als Template lesen
+skip_content_templating = ["**/*.md"]
+
+[search]
+index_format = "elasticlunr_javascript"
+include_content = true
+
+[extra]
